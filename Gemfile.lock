@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/HealthDataInsight/way_of_working-audit-github.git
-  revision: 3c2f9affd56497a94611980345e70e91389163d6
+  revision: 86ef3215914e9985a76b27839938b47e0e2361ea
   branch: feature/v1.0.0
   specs:
     way_of_working-audit-github (0.1.0)
@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/HealthDataInsight/way_of_working-changelog-keepachangelog.git
-  revision: c4dff8c0928733de8214e78ebf370e21c95a1e5a
+  revision: 1893dff8c5cc0ed299b60a1e0c579cc4eee365a6
   branch: feature/v1.0.0
   specs:
     way_of_working-changelog-keepachangelog (1.0.0)
@@ -21,7 +21,7 @@ GIT
 
 GIT
   remote: https://github.com/HealthDataInsight/way_of_working-code_linting-hdi.git
-  revision: 19e4d964a6db5a2dbc6c9e95d429070dcc09d6e1
+  revision: 171e7831651dffc7fd26f19876fed43278783155
   branch: feature/v1.0.0
   specs:
     way_of_working-code_linting-hdi (0.1.0)
@@ -30,7 +30,7 @@ GIT
 
 GIT
   remote: https://github.com/HealthDataInsight/way_of_working-code_of_conduct-contributor_covenant.git
-  revision: 9931d3879769fa62e40480cf2ad271e1b6f64149
+  revision: 36c18f3e4ed737c4901db93320a194ec2f83b969
   branch: feature/v1.0.0
   specs:
     way_of_working-code_of_conduct-contributor_covenant (0.1.0)
@@ -39,7 +39,7 @@ GIT
 
 GIT
   remote: https://github.com/HealthDataInsight/way_of_working-decision_record-madr.git
-  revision: 0e067c3a80033e7a3a37005b707840c1c164db3a
+  revision: 386e46d0303f01983a41db32b45912261defe8ff
   branch: feature/v1.0.0
   specs:
     way_of_working-decision_record-madr (0.1.0)
@@ -48,7 +48,7 @@ GIT
 
 GIT
   remote: https://github.com/HealthDataInsight/way_of_working-inclusive_language-alex.git
-  revision: 529812da01a0ca7a083138e9ea5c04c2a965ea66
+  revision: b6a35ca3a1e1cffed94cc5da1cc1540ae82eb69b
   branch: feature/v1-release-prep
   specs:
     way_of_working-inclusive_language-alex (1.0.0)
@@ -56,7 +56,7 @@ GIT
 
 GIT
   remote: https://github.com/HealthDataInsight/way_of_working-pull_request_template-hdi.git
-  revision: a8eaa1a5e5dc55635b465989d2aa446602232cc9
+  revision: 09f32a97daefb4169591be0aa81f3e671ff96114
   branch: feature/v1.0.0
   specs:
     way_of_working-pull_request_template-hdi (1.0.0)
@@ -65,7 +65,7 @@ GIT
 
 GIT
   remote: https://github.com/HealthDataInsight/way_of_working.git
-  revision: ef0f0c1b6bf90f55d000adae6d0e27cbb9359ec1
+  revision: f9b9a3a60885e771715b8fc873128af535e8501a
   branch: feature/v2-wip
   specs:
     way_of_working (2.0.0)
@@ -80,6 +80,7 @@ PATH
   remote: .
   specs:
     way_of_working-for-hdi (0.1.0)
+      way_of_working
       way_of_working-audit-github
       way_of_working-changelog-keepachangelog
       way_of_working-code_linting-hdi
@@ -87,6 +88,7 @@ PATH
       way_of_working-decision_record-madr
       way_of_working-inclusive_language-alex
       way_of_working-pull_request_template-hdi
+      zeitwerk (~> 2.6.18)
 
 GEM
   remote: https://rubygems.org/
@@ -106,7 +108,7 @@ GEM
     ast (2.4.2)
     base64 (0.2.0)
     bigdecimal (3.1.8)
-    brakeman (6.2.1)
+    brakeman (6.2.2)
       racc
     bundler-audit (0.9.2)
       bundler (>= 1.2.0, < 3)

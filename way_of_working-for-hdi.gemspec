@@ -43,7 +43,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'way_of_working-decision_record-madr' # , '~> 1.0.0'
   spec.add_dependency 'way_of_working-inclusive_language-alex' # , '~> 1.0.0'
   spec.add_dependency 'way_of_working-pull_request_template-hdi' # , '~> 1.0.0'
-  # spec.add_dependency 'zeitwerk', '~> 2.6.18'
+  spec.add_dependency 'zeitwerk', '~> 2.6.18'
 
   # For more information and examples about making a new gem, check out our
   # guide at: https://bundler.io/guides/creating_gem.html
