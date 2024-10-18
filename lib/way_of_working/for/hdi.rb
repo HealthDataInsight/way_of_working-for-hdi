@@ -12,31 +12,10 @@ module WayOfWorking
       class Error < StandardError; end
     end
   end
+end
 
-  module SubCommands
-    # # This reopens the "way_of_working audit" sub command
-    # class Audit
-    #   register(For::Hdi::Generators::Audit, 'for', 'for',
-    # end
-    
-    # # This reopens the "way_of_working document" sub command
-    # class Document
-    #   register(For::Hdi::Generators::Document, 'for', 'for',
-    # end
-    
-    # # This reopens the "way_of_working exec" sub command
-    # class Exec
-    #   register(For::Hdi::Generators::Exec, 'for', 'for',
-    # end
-
-    # # This reopens the "way_of_working init" sub command
-    # class Init
-    #   register(For::Hdi::Generators::Init, 'for', 'for',
-    # end
-
-    # # This reopens the "way_of_working new" sub command
-    # class New
-    #   register(For::Hdi::Generators::New, 'for', 'for [NAME]',
-    # end
-  end
+WayOfWorking::Configuration.tap do |config|
+  # We set the organisation abbreviation and Gem version for the README badge
+  config.organisation_abbreviation = 'HDI'
+  config.organisation_gem_version = WayOfWorking::For::Hdi::VERSION
 end
