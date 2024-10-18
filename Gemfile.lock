@@ -1,0 +1,151 @@
+GIT
+  remote: https://github.com/HealthDataInsight/way_of_working-changelog-keepachangelog.git
+  revision: c4dff8c0928733de8214e78ebf370e21c95a1e5a
+  branch: feature/v1.0.0
+  specs:
+    way_of_working-changelog-keepachangelog (1.0.0)
+      way_of_working (~> 2.0)
+      zeitwerk (~> 2.6.18)
+
+GIT
+  remote: https://github.com/HealthDataInsight/way_of_working-code_linting-hdi.git
+  revision: 19e4d964a6db5a2dbc6c9e95d429070dcc09d6e1
+  branch: feature/v1.0.0
+  specs:
+    way_of_working-code_linting-hdi (0.1.0)
+      way_of_working (~> 2.0)
+      zeitwerk (~> 2.6.18)
+
+GIT
+  remote: https://github.com/HealthDataInsight/way_of_working-code_of_conduct-contributor_covenant.git
+  revision: 9931d3879769fa62e40480cf2ad271e1b6f64149
+  branch: feature/v1.0.0
+  specs:
+    way_of_working-code_of_conduct-contributor_covenant (0.1.0)
+      way_of_working (~> 2.0)
+      zeitwerk (~> 2.6.18)
+
+GIT
+  remote: https://github.com/HealthDataInsight/way_of_working-decision_record-madr.git
+  revision: 0e067c3a80033e7a3a37005b707840c1c164db3a
+  branch: feature/v1.0.0
+  specs:
+    way_of_working-decision_record-madr (0.1.0)
+      way_of_working (~> 2.0)
+      zeitwerk (~> 2.6.18)
+
+GIT
+  remote: https://github.com/HealthDataInsight/way_of_working-inclusive_language-alex.git
+  revision: 529812da01a0ca7a083138e9ea5c04c2a965ea66
+  branch: feature/v1-release-prep
+  specs:
+    way_of_working-inclusive_language-alex (1.0.0)
+      way_of_working (~> 2.0)
+
+GIT
+  remote: https://github.com/HealthDataInsight/way_of_working-pull_request_template-hdi.git
+  revision: a8eaa1a5e5dc55635b465989d2aa446602232cc9
+  branch: feature/v1.0.0
+  specs:
+    way_of_working-pull_request_template-hdi (1.0.0)
+      way_of_working (~> 2.0)
+      zeitwerk (~> 2.6.18)
+
+GIT
+  remote: https://github.com/HealthDataInsight/way_of_working.git
+  revision: 0316661e20f927bb8d58ad5865bc82ac3daee994
+  branch: feature/v2-wip
+  specs:
+    way_of_working (2.0.0)
+      activesupport
+      git (~> 1.13)
+      nokogiri
+      rainbow (~> 3.1)
+      thor (~> 1.2)
+      zeitwerk (~> 2.6.18)
+
+PATH
+  remote: .
+  specs:
+    way_of_working-for-hdi (0.1.0)
+      way_of_working
+      way_of_working-changelog-keepachangelog
+      way_of_working-code_linting-hdi
+      way_of_working-code_of_conduct-contributor_covenant
+      way_of_working-decision_record-madr
+      way_of_working-inclusive_language-alex
+      way_of_working-pull_request_template-hdi
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activesupport (7.2.1.1)
+      base64
+      bigdecimal
+      concurrent-ruby (~> 1.0, >= 1.3.1)
+      connection_pool (>= 2.2.5)
+      drb
+      i18n (>= 1.6, < 2)
+      logger (>= 1.4.2)
+      minitest (>= 5.1)
+      securerandom (>= 0.3)
+      tzinfo (~> 2.0, >= 2.0.5)
+    addressable (2.8.7)
+      public_suffix (>= 2.0.2, < 7.0)
+    base64 (0.2.0)
+    bigdecimal (3.1.8)
+    concurrent-ruby (1.3.4)
+    connection_pool (2.4.1)
+    drb (2.2.1)
+    git (1.19.1)
+      addressable (~> 2.8)
+      rchardet (~> 1.8)
+    i18n (1.14.6)
+      concurrent-ruby (~> 1.0)
+    logger (1.6.1)
+    minitest (5.25.1)
+    nokogiri (1.16.7-aarch64-linux)
+      racc (~> 1.4)
+    nokogiri (1.16.7-arm-linux)
+      racc (~> 1.4)
+    nokogiri (1.16.7-arm64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.16.7-x86-linux)
+      racc (~> 1.4)
+    nokogiri (1.16.7-x86_64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.16.7-x86_64-linux)
+      racc (~> 1.4)
+    public_suffix (6.0.1)
+    racc (1.8.1)
+    rainbow (3.1.1)
+    rake (13.2.1)
+    rchardet (1.8.0)
+    securerandom (0.3.1)
+    thor (1.3.2)
+    tzinfo (2.0.6)
+      concurrent-ruby (~> 1.0)
+    zeitwerk (2.6.18)
+
+PLATFORMS
+  aarch64-linux
+  arm-linux
+  arm64-darwin
+  x86-linux
+  x86_64-darwin
+  x86_64-linux
+
+DEPENDENCIES
+  minitest (~> 5.0)
+  rake (~> 13.0)
+  way_of_working!
+  way_of_working-changelog-keepachangelog!
+  way_of_working-code_linting-hdi!
+  way_of_working-code_of_conduct-contributor_covenant!
+  way_of_working-decision_record-madr!
+  way_of_working-for-hdi!
+  way_of_working-inclusive_language-alex!
+  way_of_working-pull_request_template-hdi!
+
+BUNDLED WITH
+   2.5.21

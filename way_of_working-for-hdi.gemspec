@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.authors = ['Tim Gentry']
   spec.email = ['52189+timgentry@users.noreply.github.com']
 
-  spec.summary = 'TODO: Way of Working plugin for for using hdi'
+  spec.summary = 'Way of Working for Health Data Insight'
   spec.homepage = 'https://github.com/HealthDataInsight/way_of_working-for-hdi'
   spec.license = 'MIT'
   spec.required_ruby_version = '>= 3.1.0'
@@ -35,8 +35,14 @@ Gem::Specification.new do |spec|
 
   # Uncomment to register a new dependency of your gem
   # spec.add_dependency "example-gem", "~> 1.0"
-  spec.add_dependency 'way_of_working', '~> 2.0'
-  spec.add_dependency 'zeitwerk', '~> 2.6.18'
+  spec.add_dependency 'way_of_working' # , '~> 2.0'
+  spec.add_dependency 'way_of_working-changelog-keepachangelog' # , '~> 1.0.0'
+  spec.add_dependency 'way_of_working-code_linting-hdi' # , '~> 1.0.0'
+  spec.add_dependency 'way_of_working-code_of_conduct-contributor_covenant' # , '~> 1.0.0'
+  spec.add_dependency 'way_of_working-decision_record-madr' # , '~> 1.0.0'
+  spec.add_dependency 'way_of_working-inclusive_language-alex' # , '~> 1.0.0'
+  spec.add_dependency 'way_of_working-pull_request_template-hdi' # , '~> 1.0.0'
+  # spec.add_dependency 'zeitwerk', '~> 2.6.18'
 
   # For more information and examples about making a new gem, check out our
   # guide at: https://bundler.io/guides/creating_gem.html
