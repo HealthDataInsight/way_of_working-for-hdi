@@ -1,4 +1,4 @@
-# HDI Engineering Way of Working
+# Way of Working for HDI
 
 ![HDI Way of Working Version](https://img.shields.io/badge/HDI_Way_of_Working-v0.1.0-%238169e3?labelColor=black)
 [![Gem Version](https://badge.fury.io/rb/way_of_working.svg)](https://badge.fury.io/rb/way_of_working)
@@ -10,7 +10,7 @@
 
 ## Introduction
 
-This framework will describe a consistent, high-quality approach to Software Engineering at HDI.
+This framework will describe a consistent, high-quality approach to Software Engineering at Health Data Insight.
 
 It is an opinionated approach intending to support rapid development, across numerous projects, by a fungible workforce who can swap between assignments with the minimum friction.
 
