@@ -8,10 +8,10 @@
 ![HDI Way of Working Version](https://img.shields.io/badge/HDI_Way_of_Working-v0.1.0-%238169e3?labelColor=black)
 [![Gem Version](https://badge.fury.io/rb/way_of_working.svg)](https://badge.fury.io/rb/way_of_working)
 <br />
-[![MegaLinter](https://github.com/HealthDataInsight/hdi-way_of_working/workflows/MegaLinter/badge.svg?branch=main)](https://github.com/HealthDataInsight/hdi-way_of_working/actions?query=workflow%3AMegaLinter+branch%3Amain)
-[![Inclusive Language](https://github.com/HealthDataInsight/hdi-way_of_working/actions/workflows/inclusive-language.yml/badge.svg)](https://github.com/HealthDataInsight/hdi-way_of_working/actions/workflows/inclusive-language.yml)
-[![WCAG 2.1 AA](https://github.com/HealthDataInsight/hdi-way_of_working/actions/workflows/wcag2aa.yml/badge.svg)](https://github.com/HealthDataInsight/hdi-way_of_working/actions/workflows/wcag2aa.yml)
-[![WCAG 2.1 AAA](https://github.com/HealthDataInsight/hdi-way_of_working/actions/workflows/wcag2aaa.yml/badge.svg)](https://github.com/HealthDataInsight/hdi-way_of_working/actions/workflows/wcag2aaa.yml)
+[![MegaLinter](https://github.com/HealthDataInsight/way_of_working-for-hdi/workflows/MegaLinter/badge.svg?branch=main)](https://github.com/HealthDataInsight/way_of_working-for-hdi/actions?query=workflow%3AMegaLinter+branch%3Amain)
+[![Inclusive Language](https://github.com/HealthDataInsight/way_of_working-for-hdi/actions/workflows/inclusive-language.yml/badge.svg)](https://github.com/HealthDataInsight/way_of_working-for-hdi/actions/workflows/inclusive-language.yml)
+[![WCAG 2.1 AA](https://github.com/HealthDataInsight/way_of_working-for-hdi/actions/workflows/wcag2aa.yml/badge.svg)](https://github.com/HealthDataInsight/way_of_working-for-hdi/actions/workflows/wcag2aa.yml)
+[![WCAG 2.1 AAA](https://github.com/HealthDataInsight/way_of_working-for-hdi/actions/workflows/wcag2aaa.yml/badge.svg)](https://github.com/HealthDataInsight/way_of_working-for-hdi/actions/workflows/wcag2aaa.yml)
 
 ## Introduction
 
@@ -23,7 +23,7 @@ It builds on the [twelve-factor app](https://12factor.net) methodology and is in
 
 The most significant difference here is that we will be opinionated and make technological and process choices. Everyone is encouraged to discuss and submit Pull Requests (PRs) if they want changes to the choices made, but by making those choices, we can automate many tedious background tasks that are currently manual.
 
-It consists of a GitHub Pages website, available at <https://healthdatainsight.github.io/hdi-way_of_working>, and command line tool.
+It consists of a GitHub Pages website, available at <https://healthdatainsight.github.io/way_of_working-for-hdi>, and command line tool.
 
 ## Installation
 
@@ -56,7 +56,7 @@ You will need to provide the Code of Conduct `[CONTACT METHOD]`, usually an emai
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-This RubyGem was created using `bundle gem hdi-way_of_working`.
+This RubyGem was created using `bundle gem way_of_working-for-hdi`.
 
 To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
@@ -70,7 +70,7 @@ way_of_working help
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at <https://github.com/HealthDataInsight/hdi-way_of_working>. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/HealthDataInsight/hdi-way_of_working/blob/main/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at <https://github.com/HealthDataInsight/way_of_working-for-hdi>. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/HealthDataInsight/way_of_working-for-hdi/blob/main/CODE_OF_CONDUCT.md).
 
 ## License
 
@@ -78,4 +78,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the Hdi::WayOfWorking project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/HealthDataInsight/hdi-way_of_working/blob/main/CODE_OF_CONDUCT.md).
+Everyone interacting in the Hdi::WayOfWorking project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/HealthDataInsight/way_of_working-for-hdi/blob/main/CODE_OF_CONDUCT.md).

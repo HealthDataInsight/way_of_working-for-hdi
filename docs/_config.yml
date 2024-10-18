@@ -76,7 +76,7 @@ callouts:
 
 aux_links:
   "HDI Way of Working on GitHub":
-    - "//github.com/healthdatainsight/hdi-way_of_working"
+    - "//github.com/healthdatainsight/way_of_working-for-hdi"
 
 favicon_ico: "https://healthdatainsight.org.uk/wp-content/uploads/2020/11/cropped-hdi-favicon-1-32x32.png"
 search_enabled: false
@@ -84,7 +84,7 @@ search_enabled: false
 # Footer
 gh_edit_link: true # show or hide edit this page link
 gh_edit_link_text: "Edit this page on GitHub."
-gh_edit_repository: "https://github.com/healthdatainsight/hdi-way_of_working" # the github URL for your repo
+gh_edit_repository: "https://github.com/healthdatainsight/way_of_working-for-hdi" # the github URL for your repo
 gh_edit_branch: main
 gh_edit_source: docs
 gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
