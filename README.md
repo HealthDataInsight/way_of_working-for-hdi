@@ -1,10 +1,5 @@
 # HDI Engineering Way of Working
 
-<!-- Way of Working: Main Badge Holder Start -->
-![Way of Working Badge](https://img.shields.io/badge/Way_of_Working-v2.0.0-%238169e3?labelColor=black)
-<!-- Way of Working: Additional Badge Holder Start -->
-<!-- Way of Working: Badge Holder End -->
-
 ![HDI Way of Working Version](https://img.shields.io/badge/HDI_Way_of_Working-v0.1.0-%238169e3?labelColor=black)
 [![Gem Version](https://badge.fury.io/rb/way_of_working.svg)](https://badge.fury.io/rb/way_of_working)
 <br />
