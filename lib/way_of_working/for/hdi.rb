@@ -4,6 +4,7 @@ require 'way_of_working'
 require 'zeitwerk'
 
 loader = Zeitwerk::Loader.for_gem_extension(WayOfWorking::For)
+loader.ignore("#{__dir__}/hdi/plugin.rb")
 loader.setup
 
 # Require "internal" plugin(s) here
