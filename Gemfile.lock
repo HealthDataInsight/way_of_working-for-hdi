@@ -1,9 +1,19 @@
 GIT
-  remote: https://github.com/HealthDataInsight/way_of_working-audit-github.git
-  revision: 86ef3215914e9985a76b27839938b47e0e2361ea
+  remote: https://github.com/HealthDataInsight/way_of_working-audit-github-cis_benchmark.git
+  revision: f5035003ab7767c38089bbac2242bf076fc925bc
   branch: feature/v1.0.0
   specs:
-    way_of_working-audit-github (0.1.0)
+    way_of_working-audit-github-cis_benchmark (1.0.0)
+      way_of_working (~> 2.0)
+      way_of_working-audit-github (~> 1.0)
+      zeitwerk (~> 2.6.18)
+
+GIT
+  remote: https://github.com/HealthDataInsight/way_of_working-audit-github.git
+  revision: 9606aab91d27c29c6471a7aed230fbf3a689f13a
+  branch: feature/v1.0.0
+  specs:
+    way_of_working-audit-github (1.0.0)
       faraday-multipart (~> 1.0)
       faraday-retry (~> 2.2)
       octokit (~> 9.1)
@@ -65,7 +75,7 @@ GIT
 
 GIT
   remote: https://github.com/HealthDataInsight/way_of_working.git
-  revision: f9b9a3a60885e771715b8fc873128af535e8501a
+  revision: bcbcb7d2fe021853a5e80625cbc4785913727095
   branch: feature/v2-wip
   specs:
     way_of_working (2.0.0)
@@ -82,6 +92,7 @@ PATH
     way_of_working-for-hdi (0.1.0)
       way_of_working
       way_of_working-audit-github
+      way_of_working-audit-github-cis_benchmark
       way_of_working-changelog-keepachangelog
       way_of_working-code_linting-hdi
       way_of_working-code_of_conduct-contributor_covenant
@@ -307,6 +318,7 @@ DEPENDENCIES
   rake (~> 13.0)
   way_of_working!
   way_of_working-audit-github!
+  way_of_working-audit-github-cis_benchmark!
   way_of_working-changelog-keepachangelog!
   way_of_working-code_linting-hdi!
   way_of_working-code_of_conduct-contributor_covenant!

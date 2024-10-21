@@ -10,12 +10,12 @@ def github_gem(plugin_name, branch = 'feature/v1.0.0')
   gem gem_name, git: "https://github.com/HealthDataInsight/#{gem_name}.git", branch:
 end
 
+github_gem('audit-github-cis_benchmark')
 github_gem('audit-github')
 github_gem('changelog-keepachangelog')
 github_gem('code_linting-hdi')
 github_gem('code_of_conduct-contributor_covenant')
 github_gem('decision_record-madr')
-# 'github_audit-cis'
 github_gem('inclusive_language-alex', 'feature/v1-release-prep')
 github_gem('pull_request_template-hdi')
 
