@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.license = 'MIT'
   spec.required_ruby_version = '>= 3.1.0'
 
-  spec.metadata['allowed_push_host'] = "TODO: Set to your gem server 'https://example.com'"
+  spec.metadata['allowed_push_host'] = 'https://rubygems.org'
   spec.metadata['rubygems_mfa_required'] = 'true'
 
   spec.metadata['homepage_uri'] = spec.homepage
@@ -42,7 +42,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'way_of_working-code_linting-hdi' # , '~> 1.0.0'
   spec.add_dependency 'way_of_working-code_of_conduct-contributor_covenant' # , '~> 1.0.0'
   spec.add_dependency 'way_of_working-decision_record-madr' # , '~> 1.0.0'
-  spec.add_dependency 'way_of_working-inclusive_language-alex' # , '~> 1.0.0'
+  spec.add_dependency 'way_of_working-inclusive_language-alex', '~> 1.0.0'
   spec.add_dependency 'way_of_working-pull_request_template-hdi' # , '~> 1.0.0'
   spec.add_dependency 'zeitwerk', '~> 2.6.18'
 
