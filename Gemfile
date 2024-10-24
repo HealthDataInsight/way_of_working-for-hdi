@@ -2,9 +2,6 @@
 
 source 'https://rubygems.org'
 
-# FIXME: Remove this hard-coded link before merging
-gem 'way_of_working', git: 'https://github.com/HealthDataInsight/way_of_working.git', branch: 'main'
-
 def github_gem(plugin_name, branch = 'feature/v1.0.0')
   gem_name = "way_of_working-#{plugin_name}"
   gem gem_name, git: "https://github.com/HealthDataInsight/#{gem_name}.git", branch:
