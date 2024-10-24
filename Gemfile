@@ -13,7 +13,6 @@ github_gem('changelog-keepachangelog')
 github_gem('code_linting-hdi')
 github_gem('code_of_conduct-contributor_covenant')
 github_gem('decision_record-madr')
-github_gem('inclusive_language-alex', 'feature/v1-release-prep')
 github_gem('pull_request_template-hdi')
 
 # Specify your gem's dependencies in way_of_working-for-hdi.gemspec
