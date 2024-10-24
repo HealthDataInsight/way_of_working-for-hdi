@@ -69,7 +69,7 @@ PATH
   remote: .
   specs:
     way_of_working-for-hdi (0.1.0)
-      way_of_working
+      way_of_working (~> 2.0)
       way_of_working-audit-github
       way_of_working-audit-github-cis_benchmark
       way_of_working-changelog-keepachangelog
