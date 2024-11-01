@@ -19,5 +19,7 @@ github_gem('pull_request_template-hdi')
 gemspec
 
 gem 'minitest', '~> 5.0'
+gem 'mocha', '~> 2.0'
 gem 'ndr_dev_support', '>= 3.1.3'
 gem 'rake', '~> 13.0'
+gem 'zeitwerk', '~> 2.6.18'
