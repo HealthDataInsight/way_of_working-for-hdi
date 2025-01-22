@@ -68,15 +68,15 @@ GIT
 PATH
   remote: .
   specs:
-    way_of_working-for-hdi (0.1.0)
-      way_of_working (~> 2.0)
+    way_of_working-for-hdi (1.0.0)
+      way_of_working (~> 2.0.1)
       way_of_working-audit-github
       way_of_working-audit-github-cis_benchmark
       way_of_working-changelog-keepachangelog
       way_of_working-code_linting-hdi
       way_of_working-code_of_conduct-contributor_covenant
       way_of_working-decision_record-madr
-      way_of_working-inclusive_language-alex (~> 1.0.0)
+      way_of_working-inclusive_language-alex (~> 1.0.1)
       way_of_working-pull_request_template-hdi
       zeitwerk (~> 2.6.18)
 
@@ -335,15 +335,16 @@ GEM
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.6.0)
     uri (0.13.1)
-    way_of_working (2.0.0)
+    way_of_working (2.0.1)
       activesupport
       git (~> 1.13)
       nokogiri
       rainbow (~> 3.1)
       thor (~> 1.2)
       zeitwerk (~> 2.6.18)
-    way_of_working-inclusive_language-alex (1.0.0)
-      way_of_working (~> 2.0)
+    way_of_working-inclusive_language-alex (1.0.1)
+      way_of_working (~> 2.0.1)
+      zeitwerk (~> 2.6.18)
     webrick (1.9.0)
     websocket (1.2.11)
     with_clean_rbenv (0.1.0)
