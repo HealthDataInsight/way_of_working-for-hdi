@@ -1,6 +1,10 @@
 # Way of Working for HDI
 
-![HDI Way of Working Version](https://img.shields.io/badge/HDI_Way_of_Working-v0.1.0-%238169e3?labelColor=black)
+<!-- Way of Working: Main Badge Holder Start -->
+![HDI Way of Working Badge](https://img.shields.io/badge/HDI_Way_of_Working-v1.0.0-%238169e3?labelColor=black)
+<!-- Way of Working: Additional Badge Holder Start -->
+<!-- Way of Working: Badge Holder End -->
+
 [![Gem Version](https://badge.fury.io/rb/way_of_working.svg)](https://badge.fury.io/rb/way_of_working)
 <br />
 [![MegaLinter](https://github.com/HealthDataInsight/way_of_working-for-hdi/workflows/MegaLinter/badge.svg?branch=main)](https://github.com/HealthDataInsight/way_of_working-for-hdi/actions?query=workflow%3AMegaLinter+branch%3Amain)
