@@ -9,18 +9,6 @@ GIT
       zeitwerk (~> 2.6.18)
 
 GIT
-  remote: https://github.com/HealthDataInsight/way_of_working-audit-github.git
-  revision: 5ccdfed1eabac347cc00cf5b56a370f51bee1e31
-  branch: feature/v1.0.0
-  specs:
-    way_of_working-audit-github (1.0.0)
-      faraday-multipart (~> 1.0)
-      faraday-retry (~> 2.2)
-      octokit (~> 9.1)
-      way_of_working (~> 2.0)
-      zeitwerk (~> 2.6.18)
-
-GIT
   remote: https://github.com/HealthDataInsight/way_of_working-changelog-keepachangelog.git
   revision: 7c3569dd399c4584d42c3f9ca36f0cc3a0dca2c3
   branch: feature/v1.0.0
@@ -43,7 +31,7 @@ PATH
   specs:
     way_of_working-for-hdi (1.0.0)
       way_of_working (~> 2.0.1)
-      way_of_working-audit-github
+      way_of_working-audit-github (~> 1.0.1)
       way_of_working-audit-github-cis_benchmark
       way_of_working-changelog-keepachangelog
       way_of_working-code_linting-hdi
@@ -327,6 +315,12 @@ GEM
       rainbow (~> 3.1)
       thor (~> 1.2)
       zeitwerk (~> 2.6.18)
+    way_of_working-audit-github (1.0.1)
+      faraday-multipart (~> 1.0)
+      faraday-retry (~> 2.2)
+      octokit (~> 9.1)
+      way_of_working (~> 2.0)
+      zeitwerk (~> 2.6.18)
     way_of_working-code_of_conduct-contributor_covenant (1.0.0)
       way_of_working (~> 2.0)
       zeitwerk (~> 2.6.18)
@@ -360,7 +354,6 @@ DEPENDENCIES
   rails-html-sanitizer (>= 1.6.1)
   railties (~> 7.0, >= 7.1.5.1)
   rake (~> 13.0)
-  way_of_working-audit-github!
   way_of_working-audit-github-cis_benchmark!
   way_of_working-changelog-keepachangelog!
   way_of_working-code_linting-hdi!

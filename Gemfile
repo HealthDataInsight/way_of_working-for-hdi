@@ -8,7 +8,6 @@ def github_gem(plugin_name, branch = 'feature/v1.0.0')
 end
 
 github_gem('audit-github-cis_benchmark')
-github_gem('audit-github')
 github_gem('changelog-keepachangelog')
 github_gem('code_linting-hdi')
 
