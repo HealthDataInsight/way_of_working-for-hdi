@@ -38,24 +38,6 @@ GIT
       way_of_working (~> 2.0)
       zeitwerk (~> 2.6.18)
 
-GIT
-  remote: https://github.com/HealthDataInsight/way_of_working-code_of_conduct-contributor_covenant.git
-  revision: 19fee754f7d8ce84029ffcdca304298bb4bdc066
-  branch: feature/v1.0.0
-  specs:
-    way_of_working-code_of_conduct-contributor_covenant (0.1.0)
-      way_of_working (~> 2.0)
-      zeitwerk (~> 2.6.18)
-
-GIT
-  remote: https://github.com/HealthDataInsight/way_of_working-pull_request_template-hdi.git
-  revision: 59e07ea29531b8ddebc44924904e3a52bc7fb69c
-  branch: feature/v1.0.0
-  specs:
-    way_of_working-pull_request_template-hdi (1.0.0)
-      way_of_working (~> 2.0)
-      zeitwerk (~> 2.6.18)
-
 PATH
   remote: .
   specs:
@@ -65,10 +47,10 @@ PATH
       way_of_working-audit-github-cis_benchmark
       way_of_working-changelog-keepachangelog
       way_of_working-code_linting-hdi
-      way_of_working-code_of_conduct-contributor_covenant
+      way_of_working-code_of_conduct-contributor_covenant (~> 1.0.0)
       way_of_working-decision_record-madr (~> 1.0.0)
       way_of_working-inclusive_language-alex (~> 1.0.1)
-      way_of_working-pull_request_template-hdi
+      way_of_working-pull_request_template-hdi (~> 1.0.0)
       zeitwerk (~> 2.6.18)
 
 GEM
@@ -345,11 +327,17 @@ GEM
       rainbow (~> 3.1)
       thor (~> 1.2)
       zeitwerk (~> 2.6.18)
+    way_of_working-code_of_conduct-contributor_covenant (1.0.0)
+      way_of_working (~> 2.0)
+      zeitwerk (~> 2.6.18)
     way_of_working-decision_record-madr (1.0.0)
       way_of_working (~> 2.0)
       zeitwerk (~> 2.6.18)
     way_of_working-inclusive_language-alex (1.0.1)
       way_of_working (~> 2.0.1)
+      zeitwerk (~> 2.6.18)
+    way_of_working-pull_request_template-hdi (1.0.0)
+      way_of_working (~> 2.0)
       zeitwerk (~> 2.6.18)
     websocket (1.2.11)
     with_clean_rbenv (0.1.0)
@@ -376,9 +364,7 @@ DEPENDENCIES
   way_of_working-audit-github-cis_benchmark!
   way_of_working-changelog-keepachangelog!
   way_of_working-code_linting-hdi!
-  way_of_working-code_of_conduct-contributor_covenant!
   way_of_working-for-hdi!
-  way_of_working-pull_request_template-hdi!
 
 BUNDLED WITH
    2.5.21
