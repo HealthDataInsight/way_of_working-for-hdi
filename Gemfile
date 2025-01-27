@@ -9,7 +9,6 @@ end
 
 github_gem('audit-github-cis_benchmark')
 github_gem('changelog-keepachangelog')
-github_gem('code_linting-hdi')
 
 # Specify your gem's dependencies in way_of_working-for-hdi.gemspec
 gemspec

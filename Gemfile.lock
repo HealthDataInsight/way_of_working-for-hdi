@@ -17,15 +17,6 @@ GIT
       way_of_working (~> 2.0)
       zeitwerk (~> 2.6.18)
 
-GIT
-  remote: https://github.com/HealthDataInsight/way_of_working-code_linting-hdi.git
-  revision: fbef1fe89e8b2a1383cdecd242a2c69434497fa1
-  branch: feature/v1.0.0
-  specs:
-    way_of_working-code_linting-hdi (0.1.0)
-      way_of_working (~> 2.0)
-      zeitwerk (~> 2.6.18)
-
 PATH
   remote: .
   specs:
@@ -34,7 +25,7 @@ PATH
       way_of_working-audit-github (~> 1.0.1)
       way_of_working-audit-github-cis_benchmark
       way_of_working-changelog-keepachangelog
-      way_of_working-code_linting-hdi
+      way_of_working-code_linting-hdi (~> 1.0.0)
       way_of_working-code_of_conduct-contributor_covenant (~> 1.0.0)
       way_of_working-decision_record-madr (~> 1.0.0)
       way_of_working-inclusive_language-alex (~> 1.0.1)
@@ -321,6 +312,9 @@ GEM
       octokit (~> 9.1)
       way_of_working (~> 2.0)
       zeitwerk (~> 2.6.18)
+    way_of_working-code_linting-hdi (1.0.0)
+      way_of_working (~> 2.0.1)
+      zeitwerk (~> 2.6.18)
     way_of_working-code_of_conduct-contributor_covenant (1.0.0)
       way_of_working (~> 2.0)
       zeitwerk (~> 2.6.18)
@@ -356,7 +350,6 @@ DEPENDENCIES
   rake (~> 13.0)
   way_of_working-audit-github-cis_benchmark!
   way_of_working-changelog-keepachangelog!
-  way_of_working-code_linting-hdi!
   way_of_working-for-hdi!
 
 BUNDLED WITH
