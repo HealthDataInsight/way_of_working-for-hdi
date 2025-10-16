@@ -3,49 +3,56 @@ layout: page
 ---
 # Decision Records
 
-## Overview
+We use [Markdown Any Decision Records (MADR)](https://adr.github.io/madr/) version 3.0.0.
 
-We use [Markdown Any Decision Records (MADR)](https://adr.github.io/madr/) v3.0.0 to capture project decisions that:
+In general, projects will follow the [Way of Working](https://github.com/HealthDataInsight/way_of_working) and so decisions captured within individual projects will generally cover decisions that:
 
-- aren't covered in the [Way of Working](https://github.com/HealthDataInsight/way_of_working)
-- need project-specific implementation details
-- diverge from Way of Working guidance
+- are not already covered in the Way of Working
+- are covered in the Way of Working, but have specific implementation details which need to be captured
+- diverge from the guidance in the Way of Working
 
-Background: [GDS Way page on Architecture Decisions](https://gds-way.cloudapps.digital/standards/architecture-decisions.html) and [MADR documentation](https://adr.github.io/madr/).
+You can read about the general approach to capturing decisions on the [GDS Way page on Architecture Decisions](https://gds-way.cloudapps.digital/standards/architecture-decisions.html) and specifics about MADR are available at <https://adr.github.io/madr/>.
 
-{: .note }
-Proposing and reviewing decisions requires familiarity with [GitHub pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
+Proposing and reviewing decisions requires an understanding of GitHub and [pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
 
-## Setup
+## Usage
 
-Add MADR v3.0.0 to your project:
+### Adding Markdown Any Decision Records to your project
+
+To add the MADR v3.0.0 framework to your project, run the following at the command line:
 
 ```bash
 way_of_working init decision_record
 ```
 
-## Usage
-
 ### Create a new decision record
 
-**Automated:**
+#### Manual approach
+
+1. Copy `docs/decisions/adr-template.md` to `docs/decisions/NNNN-title-with-dashes.md`, where `NNNN` indicates the next number in sequence.
+2. Edit `NNNN-title-with-dashes.md`.
+
+Note you can also use [other patterns for the directory format](https://github.com/joelparkerhenderson/architecture_decision_record#adr-file-name-conventions).
+As a consequence, some existing tooling might not be applicable.
+
+The filenames are following the pattern `NNNN-title-with-dashes.md`, where
+
+- `NNNN` is a consecutive number and we assume that there won't be more than 9,999 ADRs in one repository.
+- the title is stored using dashes and lowercase, because [adr-tools] also does that.
+- the suffix is `.md`, because it is a [Markdown](https://github.github.com/gfm/) file.
+
+Decisions are placed in the subfolder `decisions/` to keep them close to the documentation but also separate the decisions from other documentation.
+
+#### Automatic approach
+
+To create a new decision record, run:
+
+```bash
+way_of_working new decision_record [NAME]
+```
+
+Where `[NAME]` is the title of your decision record, for example:
 
 ```bash
 way_of_working new decision_record "Use Markdown Any Decision Records"
 ```
-
-**Manual:**
-
-1. Copy `docs/decisions/adr-template.md` to `docs/decisions/NNNN-title-with-dashes.md` (NNNN = next sequence number)
-2. Edit the new file
-
-**File naming:** `NNNN-title-with-dashes.md` where:
-
-- `NNNN` is consecutive (assumes <10,000 ADRs per repo)
-- Title uses lowercase and dashes (matching [adr-tools](https://github.com/npryce/adr-tools) convention)
-- `.md` extension for Markdown format
-
-{: .note }
-Alternative [directory patterns](https://github.com/joelparkerhenderson/architecture_decision_record#adr-file-name-conventions) are supported but may affect tooling compatibility.
-
-Decisions are stored in `decisions/` subfolder to separate them from other documentation while keeping them accessible.
