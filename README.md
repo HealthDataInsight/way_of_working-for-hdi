@@ -1,5 +1,7 @@
 # WayOfWorking::For::Hdi
 
+[![MegaLinter](https://github.com/HealthDataInsight/way_of_working-for-hdi/workflows/MegaLinter/badge.svg?branch=main)](https://github.com/HealthDataInsight/way_of_working-for-hdi/actions?query=workflow%3AMegaLinter+branch%3Amain)
+
 TODO: Delete this and the text below, and describe your gem
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/way_of_working-for-hdi`. To experiment with that code, run `bin/console` for an interactive prompt.
