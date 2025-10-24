@@ -33,9 +33,8 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  # Uncomment to register a new dependency of your gem
-  # spec.add_dependency "example-gem", "~> 1.0"
   spec.add_dependency 'way_of_working', '~> 2.0.1'
+  spec.add_dependency 'way_of_working-changelog-keepachangelog', '~> 1.0.0'
   spec.add_dependency 'way_of_working-code_linting-hdi', '~> 1.0.0'
   spec.add_dependency 'way_of_working-code_of_conduct-contributor_covenant', '~> 1.0.0'
   spec.add_dependency 'way_of_working-decision_record-madr', '~> 1.0.0'

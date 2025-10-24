@@ -3,6 +3,7 @@ PATH
   specs:
     way_of_working-for-hdi (0.1.0)
       way_of_working (~> 2.0.1)
+      way_of_working-changelog-keepachangelog (~> 1.0.0)
       way_of_working-code_linting-hdi (~> 1.0.0)
       way_of_working-code_of_conduct-contributor_covenant (~> 1.0.0)
       way_of_working-decision_record-madr (~> 1.0.0)
@@ -277,6 +278,9 @@ GEM
       rainbow (~> 3.1)
       thor (~> 1.2)
       zeitwerk (~> 2.6.18)
+    way_of_working-changelog-keepachangelog (1.0.0)
+      way_of_working (~> 2.0)
+      zeitwerk (~> 2.6.18)
     way_of_working-code_linting-hdi (1.0.0)
       way_of_working (~> 2.0.1)
       zeitwerk (~> 2.6.18)
@@ -312,4 +316,4 @@ DEPENDENCIES
   way_of_working-for-hdi!
 
 BUNDLED WITH
-   2.7.2
+   2.5.21
