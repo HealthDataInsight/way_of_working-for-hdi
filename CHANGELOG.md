@@ -15,3 +15,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Adopted: Keep a Changelog, via a plugin
 - Adopted: Cypress end-to-end testing
 - Adopted: Semantic Versioning
+- Added dark mode support to our GitHub pages theme
