@@ -33,5 +33,6 @@ gem 'http_parser.rb', '~> 0.6.0', platforms: [:jruby]
 gem 'webrick', '~> 1.8'
 
 # Known vulnerability fixes
-gem 'nokogiri', '>= 1.16.5'
-gem 'rexml', '>= 3.2.7'
+gem 'nokogiri', '>= 1.18.3'
+gem 'rexml', '>= 3.3.9'
+gem 'uri', '~> 0.13.2'
