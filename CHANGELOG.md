@@ -14,3 +14,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Adopted: MegaLinter, via a plugin
 - Adopted: Keep a Changelog, via a plugin
 - Adopted: Cypress end-to-end testing
+- Adopted: Semantic Versioning
