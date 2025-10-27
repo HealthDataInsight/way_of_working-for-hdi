@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.authors = ['Tim Gentry']
   spec.email = ['52189+timgentry@users.noreply.github.com']
 
-  spec.summary = 'TODO: Way of Working plugin for for using hdi'
+  spec.summary = 'Way of Working for Health Data Insight'
   spec.homepage = 'https://github.com/HealthDataInsight/way_of_working-for-hdi'
   spec.license = 'MIT'
   spec.required_ruby_version = '>= 3.1.0'

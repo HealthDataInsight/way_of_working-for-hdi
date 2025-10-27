@@ -1,5 +1,5 @@
 ---
-layout: page
+has_children: true
 ---
 # Decision Records
 
