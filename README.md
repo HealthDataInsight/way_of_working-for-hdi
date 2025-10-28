@@ -1,6 +1,8 @@
 # Way of Working for HDI
 
 [![MegaLinter](https://github.com/HealthDataInsight/way_of_working-for-hdi/workflows/MegaLinter/badge.svg?branch=main)](https://github.com/HealthDataInsight/way_of_working-for-hdi/actions?query=workflow%3AMegaLinter+branch%3Amain)
+[![WCAG 2.1 AA](https://github.com/HealthDataInsight/way_of_working-for-hdi/actions/workflows/wcag2aa.yml/badge.svg)](https://github.com/HealthDataInsight/way_of_working-for-hdi/actions/workflows/wcag2aa.yml)
+[![WCAG 2.1 AAA](https://github.com/HealthDataInsight/way_of_working-for-hdi/actions/workflows/wcag2aaa.yml/badge.svg)](https://github.com/HealthDataInsight/way_of_working-for-hdi/actions/workflows/wcag2aaa.yml)
 
 ## Introduction
 
