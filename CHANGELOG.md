@@ -17,3 +17,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Adopted: Semantic Versioning
 - Added dark mode support to our GitHub pages theme
 - Adopted: Accessibility (a11y) testing using pa11y
+- Adopted: Checking for inclusive language, using Alex, via a plugin
