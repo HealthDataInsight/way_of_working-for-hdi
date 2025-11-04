@@ -8,15 +8,6 @@ GIT
       way_of_working-audit-github (~> 1.0)
       zeitwerk (~> 2.6.18)
 
-GIT
-  remote: https://github.com/HealthDataInsight/way_of_working-changelog-keepachangelog.git
-  revision: 7c3569dd399c4584d42c3f9ca36f0cc3a0dca2c3
-  branch: feature/v1.0.0
-  specs:
-    way_of_working-changelog-keepachangelog (1.0.0)
-      way_of_working (~> 2.0)
-      zeitwerk (~> 2.6.18)
-
 PATH
   remote: .
   specs:
@@ -312,6 +303,9 @@ GEM
       octokit (~> 9.1)
       way_of_working (~> 2.0)
       zeitwerk (~> 2.6.18)
+    way_of_working-changelog-keepachangelog (1.0.0)
+      way_of_working (~> 2.0)
+      zeitwerk (~> 2.6.18)
     way_of_working-code_linting-hdi (1.0.0)
       way_of_working (~> 2.0.1)
       zeitwerk (~> 2.6.18)
@@ -354,7 +348,6 @@ DEPENDENCIES
   rake (~> 13.0)
   uri (~> 0.13.2)
   way_of_working-audit-github-cis_benchmark!
-  way_of_working-changelog-keepachangelog!
   way_of_working-for-hdi!
 
 BUNDLED WITH

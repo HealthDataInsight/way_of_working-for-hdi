@@ -8,7 +8,6 @@ def github_gem(plugin_name, branch = 'feature/v1.0.0')
 end
 
 github_gem('audit-github-cis_benchmark')
-github_gem('changelog-keepachangelog')
 
 # Specify your gem's dependencies in way_of_working-for-hdi.gemspec
 gemspec
