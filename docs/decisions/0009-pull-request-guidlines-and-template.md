@@ -7,7 +7,7 @@ parent: Decision Records
 status: accepted
 date: 2023-05-24
 ---
-# Pull Request guidlines and template
+# Pull Request guidelines and template
 
 ## Context and Problem Statement
 
@@ -22,10 +22,9 @@ The structure of a Pull Request (PR) can take many forms, making it difficult to
 
 ## Decision Outcome
 
-Chosen option: "{title of option 1}", because
-{justification. e.g., only option, which meets k.o. criterion decision driver | which resolves force {force} | … | comes out best (see below)}.
+Chosen option: "What? Why? How? Testing? Screenshots (optional) Anything Else?", because clear, well-structured pull request descriptions help reviewers understand the context, changes, and testing done, making code reviews faster and more effective..
 
-Although not a template format, we should also include GitHub's communication guidlines in [How to write the perfect pull request](https://github.blog/2015-01-21-how-to-write-the-perfect-pull-request/).
+Although not a template format, we should also include GitHub's communication guidelines in [How to write the perfect pull request](https://github.blog/2015-01-21-how-to-write-the-perfect-pull-request/).
 
 ## More Information
 

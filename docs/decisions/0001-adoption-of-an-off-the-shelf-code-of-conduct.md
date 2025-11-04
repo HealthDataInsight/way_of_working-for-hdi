@@ -23,7 +23,7 @@ Which one should we adopt?
 Chosen option: "Contributor Covenant", because
 
 * It is used by tens of thousands of repos on GitHub, and is therefore likely the most recognised code of conduct of contributors.
-* It contains enforcement guidlines and is well maintained.
+* It contains enforcement guidelines and is well maintained.
 * Citizen Code of Conduct hasn't been touched since 2018.
 
 ### Consequences
