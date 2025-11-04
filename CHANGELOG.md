@@ -19,3 +19,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Adopted: Accessibility (a11y) testing using pa11y
 - Adopted: Checking for inclusive language, using Alex, via a plugin
 - Adopted: Using Cabin as our cookie-free Software-as-a-Service (SaaS) Web Analytics Solution
+- Adopted: HDI Pull Request template, via a plugin
