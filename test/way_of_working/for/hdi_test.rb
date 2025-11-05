@@ -10,14 +10,14 @@ module WayOfWorking
       end
 
       def test_sub_command_lists_exit_with_status_zero
-        _output = `bundle exec way_of_working exec`
-        assert $CHILD_STATUS.success?
+        result = system('bundle exec way_of_working exec > /dev/null 2>&1')
+        assert result, 'way_of_working exec command failed'
 
-        _output = `bundle exec way_of_working init`
-        assert $CHILD_STATUS.success?
+        result = system('bundle exec way_of_working init > /dev/null 2>&1')
+        assert result, 'way_of_working init command failed'
 
-        _output = `bundle exec way_of_working new`
-        assert $CHILD_STATUS.success?
+        result = system('bundle exec way_of_working new > /dev/null 2>&1')
+        assert result, 'way_of_working new command failed'
       end
     end
   end

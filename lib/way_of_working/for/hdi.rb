@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'way_of_working'
+require_relative 'hdi/paths'
 require 'zeitwerk'
 
 loader = Zeitwerk::Loader.for_gem_extension(WayOfWorking::For)

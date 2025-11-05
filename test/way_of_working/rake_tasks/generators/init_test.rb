@@ -8,7 +8,7 @@ module WayOfWorking
       # This class tests the RakeTasks::Init Thor Group (generator)
       class InitTest < Rails::Generators::TestCase
         tests WayOfWorking::RakeTasks::Generators::Init
-        destination WayOfWorking.root.join('tmp/generators')
+        destination WayOfWorking::For::Hdi.root.join('tmp/generators')
         setup :prepare_destination
 
         test 'generator runs without errors' do
@@ -41,7 +41,7 @@ module WayOfWorking
 
         test 'Rubocopped Rails Rakefile is amended' do
           # A rubocopped filename must be (lower) snake case
-          prepare_rakefile 'rubocopped_vanilla_rails_rakefile'
+          prepare_rakefile 'rubocopped_vanilla_rails_Rakefile'
 
           assert_file 'Rakefile' do |content|
             refute_match("require 'way_of_working/tasks' if Rails.env.development? || Rails.env.test?\n", content)
@@ -76,7 +76,7 @@ module WayOfWorking
 
         test 'Rubocopped Bundler Rakefile is amended' do
           # A rubocopped filename must be (lower) snake case
-          prepare_rakefile 'rubocopped_vanilla_bundler_rakefile'
+          prepare_rakefile 'rubocopped_vanilla_bundler_Rakefile'
 
           assert_file 'Rakefile' do |content|
             refute_match("require 'way_of_working/tasks'\n", content)
@@ -129,7 +129,7 @@ module WayOfWorking
 
         # This method will copy a vanilla Rakefile into the destination folder
         def prepare_rakefile(filename)
-          FileUtils.copy WayOfWorking.root.join('test', 'resources', filename),
+          FileUtils.copy WayOfWorking::For::Hdi.root.join('test', 'resources', filename),
                          destination_root.join('Rakefile')
         end
       end
