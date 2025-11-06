@@ -16,10 +16,8 @@ module WayOfWorking
       class Error < StandardError; end
     end
   end
-end
 
-WayOfWorking::Configuration.tap do |config|
-  # We set the organisation abbreviation and Gem version for the README badge
-  config.organisation_abbreviation = 'HDI'
-  config.organisation_gem_version = WayOfWorking::For::Hdi::VERSION
+  # Configure HDI-specific settings
+  Configuration.organisation_abbreviation = 'HDI'
+  Configuration.organisation_gem_version = For::Hdi::VERSION
 end
