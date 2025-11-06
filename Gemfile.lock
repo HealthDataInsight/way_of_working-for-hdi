@@ -1,9 +1,21 @@
+GIT
+  remote: https://github.com/HealthDataInsight/way_of_working-audit-github-cis_benchmark.git
+  revision: ea9a5ac1d9460ca3e37c0142a3c78ae69115f116
+  branch: feature/v1.0.0
+  specs:
+    way_of_working-audit-github-cis_benchmark (1.0.0)
+      way_of_working (~> 2.0)
+      way_of_working-audit-github (~> 1.0)
+      zeitwerk (~> 2.6.18)
+
 PATH
   remote: .
   specs:
     way_of_working-for-hdi (0.1.0)
       octokit (~> 9.1)
       way_of_working (~> 2.0.1)
+      way_of_working-audit-github (~> 1.0.1)
+      way_of_working-audit-github-cis_benchmark
       way_of_working-changelog-keepachangelog (~> 1.0.0)
       way_of_working-code_linting-hdi (~> 1.0.0)
       way_of_working-code_of_conduct-contributor_covenant (~> 1.0.0)
@@ -91,8 +103,12 @@ GEM
       faraday-net_http (>= 2.0, < 3.5)
       json
       logger
+    faraday-multipart (1.1.1)
+      multipart-post (~> 2.0)
     faraday-net_http (3.4.1)
       net-http (>= 0.5.0)
+    faraday-retry (2.3.2)
+      faraday (~> 2.0)
     git (1.19.1)
       addressable (~> 2.8)
       rchardet (~> 1.8)
@@ -126,6 +142,7 @@ GEM
     minitest (5.25.1)
     mocha (2.5.0)
       ruby2_keywords (>= 0.0.5)
+    multipart-post (2.4.1)
     ndr_dev_support (7.3.1)
       activesupport (>= 6.1, < 8.1)
       brakeman (>= 4.7.1)
@@ -281,6 +298,12 @@ GEM
       rainbow (~> 3.1)
       thor (~> 1.2)
       zeitwerk (~> 2.6.18)
+    way_of_working-audit-github (1.0.1)
+      faraday-multipart (~> 1.0)
+      faraday-retry (~> 2.2)
+      octokit (~> 9.1)
+      way_of_working (~> 2.0)
+      zeitwerk (~> 2.6.18)
     way_of_working-changelog-keepachangelog (1.0.0)
       way_of_working (~> 2.0)
       zeitwerk (~> 2.6.18)
@@ -326,6 +349,7 @@ DEPENDENCIES
   railties (~> 7.0, >= 7.1.5.1)
   rake (~> 13.0)
   uri (~> 0.13.2)
+  way_of_working-audit-github-cis_benchmark!
   way_of_working-for-hdi!
 
 BUNDLED WITH
