@@ -12,7 +12,6 @@ github_gem('audit-github-cis_benchmark')
 # Specify your gem's dependencies in way_of_working-for-hdi.gemspec
 gemspec
 
-# gem 'activesupport', '~> 7.0', '>= 7.1.5.1'
 gem 'minitest', '~> 5.0'
 gem 'mocha', '~> 2.0'
 gem 'ndr_dev_support', '>= 7.3.1'
