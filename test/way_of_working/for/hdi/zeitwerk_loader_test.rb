@@ -24,7 +24,7 @@ module WayOfWorking
         end
 
         def test_eager_load
-          # @loader.eager_load(force: true)
+          @loader.eager_load(force: true)
         rescue Zeitwerk::NameError => e
           flunk "Eager loading failed with error: #{e.message}"
         else

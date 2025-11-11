@@ -19,7 +19,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Way Of Working For HDI
+title: HDI Way Of Working
 # email: your-email@example.com
 # description: >- # this means to ignore newlines until "baseurl:"
 #   Write an awesome description for your new site here. You can edit this
@@ -82,9 +82,9 @@ favicon_ico: "https://healthdatainsight.org.uk/wp-content/uploads/2020/11/croppe
 search_enabled: false
 
 # Footer
-gh_edit_link: true  # show or hide edit this page link
+gh_edit_link: true # show or hide edit this page link
 gh_edit_link_text: "Edit this page on GitHub."
-gh_edit_repository: "https://github.com/healthdatainsight/way_of_working-for-hdi"  # the github URL for your repo
+gh_edit_repository: "https://github.com/healthdatainsight/way_of_working-for-hdi" # the github URL for your repo
 gh_edit_branch: main
 gh_edit_source: docs
-gh_edit_view_mode: "tree"  # "tree" or "edit" if you want the user to jump into the editor immediately
+gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
