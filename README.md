@@ -1,5 +1,10 @@
 # Way of Working for HDI
 
+<!-- Way of Working: Main Badge Holder Start -->
+![HDI Way of Working Badge](https://img.shields.io/badge/HDI_Way_of_Working-v1.0.0-%238169e3?labelColor=black)
+<!-- Way of Working: Additional Badge Holder Start -->
+<!-- Way of Working: Badge Holder End -->
+
 [![MegaLinter](https://github.com/HealthDataInsight/way_of_working-for-hdi/workflows/MegaLinter/badge.svg?branch=main)](https://github.com/HealthDataInsight/way_of_working-for-hdi/actions?query=workflow%3AMegaLinter+branch%3Amain)
 [![Inclusive Language](https://github.com/HealthDataInsight/way_of_working-for-hdi/actions/workflows/inclusive-language.yml/badge.svg)](https://github.com/HealthDataInsight/way_of_working-for-hdi/actions/workflows/inclusive-language.yml)
 [![WCAG 2.1 AA](https://github.com/HealthDataInsight/way_of_working-for-hdi/actions/workflows/wcag2aa.yml/badge.svg)](https://github.com/HealthDataInsight/way_of_working-for-hdi/actions/workflows/wcag2aa.yml)

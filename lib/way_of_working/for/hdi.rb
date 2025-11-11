@@ -16,4 +16,8 @@ module WayOfWorking
       class Error < StandardError; end
     end
   end
+
+  # Configure HDI-specific settings
+  Configuration.organisation_abbreviation = 'HDI'
+  Configuration.organisation_gem_version = For::Hdi::VERSION
 end
