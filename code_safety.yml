@@ -1,0 +1,314 @@
+---
+file safety:
+  ".alexignore":
+    comments:
+    reviewed_by: timgentry
+    safe_revision: 2678b3ff9c57492e2a6035c8ae2ff0f16b487894
+  ".alexrc":
+    comments:
+    reviewed_by: timgentry
+    safe_revision: c87018f85012ae7cf3b84e7a5db90ccf3b56ab6e
+  ".github/ISSUE_TEMPLATE/decision-record.md":
+    comments:
+    reviewed_by: timgentry
+    safe_revision: bd8b5c86601d63fb2b1f8d896f4a3b3c9f9a8f71
+  ".github/linters/.markdown-link-check.json":
+    comments:
+    reviewed_by: timgentry
+    safe_revision: c87018f85012ae7cf3b84e7a5db90ccf3b56ab6e
+  ".github/linters/rubocop_defaults.yml":
+    comments:
+    reviewed_by: timgentry
+    safe_revision: c87018f85012ae7cf3b84e7a5db90ccf3b56ab6e
+  ".github/pull_request_template.md":
+    comments:
+    reviewed_by: timgentry
+    safe_revision: 66c67a27a6411343637e657ff80ded9ea1f485ae
+  ".github/workflows/inclusive-language.yml":
+    comments:
+    reviewed_by: timgentry
+    safe_revision: 2678b3ff9c57492e2a6035c8ae2ff0f16b487894
+  ".github/workflows/main.yml":
+    comments:
+    reviewed_by: timgentry
+    safe_revision: c87018f85012ae7cf3b84e7a5db90ccf3b56ab6e
+  ".github/workflows/mega-linter.yml":
+    comments:
+    reviewed_by: timgentry
+    safe_revision: a7131bb718a895bc8994db4aed8221c53ed9e4c2
+  ".github/workflows/wcag2aa.yml":
+    comments:
+    reviewed_by: timgentry
+    safe_revision: 8c554fbef92ad533d579ee7ab2ddbb9433face53
+  ".github/workflows/wcag2aaa.yml":
+    comments:
+    reviewed_by: timgentry
+    safe_revision: 8c554fbef92ad533d579ee7ab2ddbb9433face53
+  ".gitignore":
+    comments:
+    reviewed_by: timgentry
+    safe_revision: 10564ea6a5ece1cf2d42662b65b948b31948827e
+  ".mega-linter.yml":
+    comments:
+    reviewed_by: timgentry
+    safe_revision: c87018f85012ae7cf3b84e7a5db90ccf3b56ab6e
+  ".rubocop":
+    comments:
+    reviewed_by: timgentry
+    safe_revision: c87018f85012ae7cf3b84e7a5db90ccf3b56ab6e
+  CHANGELOG.md:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: 66c67a27a6411343637e657ff80ded9ea1f485ae
+  CODE_OF_CONDUCT.md:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: 3f65fe0ee2e10582fa5cf433dfd86bb1b1bc8600
+  Gemfile:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: 10564ea6a5ece1cf2d42662b65b948b31948827e
+  Gemfile.lock:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: 10564ea6a5ece1cf2d42662b65b948b31948827e
+  LICENSE.txt:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: c87018f85012ae7cf3b84e7a5db90ccf3b56ab6e
+  README.md:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: 5859bef96ed5fc0ddc949d66693e32f09d462766
+  Rakefile:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: c87018f85012ae7cf3b84e7a5db90ccf3b56ab6e
+  bin/console:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: c87018f85012ae7cf3b84e7a5db90ccf3b56ab6e
+  bin/setup:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: c87018f85012ae7cf3b84e7a5db90ccf3b56ab6e
+  docs/.gitignore:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: dc976fc22236f72db2b5c83eaca302fec52f57ea
+  docs/404.md:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: dc976fc22236f72db2b5c83eaca302fec52f57ea
+  docs/Gemfile:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: dc976fc22236f72db2b5c83eaca302fec52f57ea
+  docs/Gemfile.lock:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: dc976fc22236f72db2b5c83eaca302fec52f57ea
+  docs/_config.yml:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: 641a129d95202c8ca4334fd41c021a88316821ad
+  docs/_includes/components/sidebar.html:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: dc976fc22236f72db2b5c83eaca302fec52f57ea
+  docs/_includes/footer_custom.html:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: dc976fc22236f72db2b5c83eaca302fec52f57ea
+  docs/_sass/color_schemes/hdi-light.scss:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: dc976fc22236f72db2b5c83eaca302fec52f57ea
+  docs/_sass/custom/OneDarkJekyll.scss:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: dc976fc22236f72db2b5c83eaca302fec52f57ea
+  docs/_sass/custom/a11y-colours.scss:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: dc976fc22236f72db2b5c83eaca302fec52f57ea
+  docs/_sass/custom/color-scheme-shims.scss:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: dc976fc22236f72db2b5c83eaca302fec52f57ea
+  docs/_sass/custom/custom.scss:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: dc976fc22236f72db2b5c83eaca302fec52f57ea
+  docs/_sass/custom/setup.scss:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: dc976fc22236f72db2b5c83eaca302fec52f57ea
+  docs/decisions/0000-use-markdown-any-decision-records.md:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: bd8b5c86601d63fb2b1f8d896f4a3b3c9f9a8f71
+  docs/decisions/0001-adoption-of-an-off-the-shelf-code-of-conduct.md:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: 66c67a27a6411343637e657ff80ded9ea1f485ae
+  docs/decisions/0002-use-megalinter-for-linting-common-file-formats.md:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: a7131bb718a895bc8994db4aed8221c53ed9e4c2
+  docs/decisions/0003-use-keep-a-changelog-v1-1-as-the-format-for-changelogs.md:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: f7ca7f7a975a45eaf46ad1da1b5ff077c32fd936
+  docs/decisions/0004-end-to-end-aka-system-testing.md:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: c08a938be83ee4870abb0d9ffb9901f2f3671628
+  docs/decisions/0005-standardised-approach-to-versioning.md:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: 65bbca6d654d1b356782c7a98e512842e8d3d626
+  docs/decisions/0006-standard-approach-to-automated-accessibility-testing.md:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: 8c554fbef92ad533d579ee7ab2ddbb9433face53
+  docs/decisions/0007-test-for-insensitive-and-inconsiderate-writing.md:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: 2678b3ff9c57492e2a6035c8ae2ff0f16b487894
+  docs/decisions/0008-software-as-a-service-saas-web-analytics-solution.md:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: 9fcbefcfedf7a04ab7040012c49ccc1deee7ee9a
+  docs/decisions/0009-pull-request-guidlines-and-template.md:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: 66c67a27a6411343637e657ff80ded9ea1f485ae
+  docs/decisions/README.md:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: bd8b5c86601d63fb2b1f8d896f4a3b3c9f9a8f71
+  docs/decisions/adr-template.md:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: bd8b5c86601d63fb2b1f8d896f4a3b3c9f9a8f71
+  docs/decisions/index.md:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: bd8b5c86601d63fb2b1f8d896f4a3b3c9f9a8f71
+  docs/index.md:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: dc976fc22236f72db2b5c83eaca302fec52f57ea
+  docs/pa11y.json:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: 8c554fbef92ad533d579ee7ab2ddbb9433face53
+  docs/way_of_working/accessibility-testing.md:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: 8c554fbef92ad533d579ee7ab2ddbb9433face53
+  docs/way_of_working/changelog.md:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: f7ca7f7a975a45eaf46ad1da1b5ff077c32fd936
+  docs/way_of_working/code-linting/index.md:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: a7131bb718a895bc8994db4aed8221c53ed9e4c2
+  docs/way_of_working/code-linting/linters.md:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: a7131bb718a895bc8994db4aed8221c53ed9e4c2
+  docs/way_of_working/code-of-conduct.md:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: 3f65fe0ee2e10582fa5cf433dfd86bb1b1bc8600
+  docs/way_of_working/decision-records.md:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: dc976fc22236f72db2b5c83eaca302fec52f57ea
+  docs/way_of_working/end-to-end-testing.md:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: c08a938be83ee4870abb0d9ffb9901f2f3671628
+  docs/way_of_working/inclusive-language.md:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: 2678b3ff9c57492e2a6035c8ae2ff0f16b487894
+  docs/way_of_working/pull-request-template-and-guidelines.md:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: 66c67a27a6411343637e657ff80ded9ea1f485ae
+  docs/way_of_working/readme-badges.md:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: 5859bef96ed5fc0ddc949d66693e32f09d462766
+  docs/way_of_working/versioning.md:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: 65bbca6d654d1b356782c7a98e512842e8d3d626
+  lib/way_of_working/for/hdi.rb:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: 5859bef96ed5fc0ddc949d66693e32f09d462766
+  lib/way_of_working/for/hdi/paths.rb:
+    comments:
+    reviewed_by:
+    safe_revision:
+  lib/way_of_working/for/hdi/plugin.rb:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: c87018f85012ae7cf3b84e7a5db90ccf3b56ab6e
+  lib/way_of_working/for/hdi/version.rb:
+    comments:
+    reviewed_by:
+    safe_revision:
+  lib/way_of_working/rake_tasks.rb:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: e8094ac26f47f166fae4c7179c0fa2a9acb517bf
+  lib/way_of_working/rake_tasks/generators/init.rb:
+    comments:
+    reviewed_by:
+    safe_revision:
+  test/resources/empty_Rakefile:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: e8094ac26f47f166fae4c7179c0fa2a9acb517bf
+  test/resources/rubocopped_vanilla_bundler_Rakefile:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: e8094ac26f47f166fae4c7179c0fa2a9acb517bf
+  test/resources/rubocopped_vanilla_rails_Rakefile:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: e8094ac26f47f166fae4c7179c0fa2a9acb517bf
+  test/resources/vanilla_bundler_Rakefile:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: e8094ac26f47f166fae4c7179c0fa2a9acb517bf
+  test/resources/vanilla_rails_Rakefile:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: e8094ac26f47f166fae4c7179c0fa2a9acb517bf
+  test/test_helper.rb:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: c87018f85012ae7cf3b84e7a5db90ccf3b56ab6e
+  test/way_of_working/for/hdi/zeitwerk_loader_test.rb:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: 641a129d95202c8ca4334fd41c021a88316821ad
+  test/way_of_working/for/hdi_test.rb:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: e8094ac26f47f166fae4c7179c0fa2a9acb517bf
+  test/way_of_working/rake_tasks/generators/init_test.rb:
+    comments:
+    reviewed_by: timgentry
+    safe_revision: e8094ac26f47f166fae4c7179c0fa2a9acb517bf
+  way_of_working-for-hdi.gemspec:
+    comments:
+    reviewed_by:
+    safe_revision:

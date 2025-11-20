@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.0] - 2025-11-20
+
 ### Added
 
 - Adopted: Markdown Any Decision Records (MADR), via a plugin
@@ -20,3 +22,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Adopted: Checking for inclusive language, using Alex, via a plugin
 - Adopted: Using Cabin as our cookie-free Software-as-a-Service (SaaS) Web Analytics Solution
 - Adopted: HDI Pull Request template, via a plugin
+
+[unreleased]: https://github.com/HealthDataInsight/way_of_working-for-hdi/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/HealthDataInsight/way_of_working-for-hdi/releases/tag/v1.0.0
