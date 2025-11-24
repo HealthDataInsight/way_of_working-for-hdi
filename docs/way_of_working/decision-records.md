@@ -1,58 +1,195 @@
 ---
-has_children: true
+layout: page
+status: REQUIRED
+enforcement: manual
 ---
 # Decision Records
 
-We use [Markdown Any Decision Records (MADR)](https://adr.github.io/madr/) version 3.0.0.
+## Purpose
 
-In general, projects will follow the [Way of Working](https://github.com/HealthDataInsight/way_of_working) and so decisions captured within individual projects will generally cover decisions that:
+We use [Markdown Any Decision Records (MADR)][madr] v3.0.0 to capture project decisions that:
 
-- are not already covered in the Way of Working
-- are covered in the Way of Working, but have specific implementation details which need to be captured
-- diverge from the guidance in the Way of Working
+- aren't covered in the [Way of Working][wow]
+- need project-specific implementation details
+- diverge from Way of Working guidance
 
-You can read about the general approach to capturing decisions on the [GDS Way page on Architecture Decisions](https://gds-way.cloudapps.digital/standards/architecture-decisions.html) and specifics about MADR are available at <https://adr.github.io/madr/>.
+{: .note }
+Proposing and reviewing decisions requires familiarity with [GitHub pull requests][gh-pr].
 
-Proposing and reviewing decisions requires an understanding of GitHub and [pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
+## Scope
 
-## Usage
+Applies to decisions about:
 
-### Adding Markdown Any Decision Records to your project
+- **Architecture**: System design, technology stack, frameworks
+- **Process**: Development workflows, deployment, testing
+- **Code standards**: Patterns, conventions, library usage
+- **Dependencies**: Adding/removing major libraries or services
+- **Data**: Schema changes, migration strategies
 
-To add the MADR v3.0.0 framework to your project, run the following at the command line:
+**Create ADR when:**
+
+- Impact spans multiple components or teams
+- Long-term consequences or significant cost/risk
+- Multiple viable alternatives exist
+
+**Don't create ADR for:**
+
+- Already covered by Way of Working
+- Tactical implementation details (use code comments)
+- Temporary workarounds or obvious choices
+
+## Requirements
+
+**File naming:** `NNNN-title-with-dashes.md`
+
+- `NNNN` = consecutive four-digit number (0001, 0002, etc.)
+- Lowercase title with dashes
+- Located in `docs/decisions/`
+
+**Required content:**
+
+1. Status (proposed, accepted, rejected, deprecated, superseded)
+2. Context and problem statement
+3. Considered options (minimum 2)
+4. Decision outcome with justification
+5. Positive and negative consequences
+
+**Status lifecycle:**
+
+- **proposed** - Under discussion
+- **accepted** - Approved for implementation
+- **rejected** - Decided against
+- **deprecated** - No longer relevant
+- **superseded** - Replaced by newer ADR (link required)
+
+## Setup
 
 ```bash
 way_of_working init decision_record
 ```
 
+## Usage
+
 ### Create a new decision record
-
-#### Manual approach
-
-1. Copy `docs/decisions/adr-template.md` to `docs/decisions/NNNN-title-with-dashes.md`, where `NNNN` indicates the next number in sequence.
-2. Edit `NNNN-title-with-dashes.md`.
-
-Note you can also use [other patterns for the directory format](https://github.com/joelparkerhenderson/architecture_decision_record#adr-file-name-conventions).
-As a consequence, some existing tooling might not be applicable.
-
-The filenames are following the pattern `NNNN-title-with-dashes.md`, where
-
-- `NNNN` is a consecutive number and we assume that there won't be more than 9,999 ADRs in one repository.
-- the title is stored using dashes and lowercase, because [adr-tools] also does that.
-- the suffix is `.md`, because it is a [Markdown](https://github.github.com/gfm/) file.
-
-Decisions are placed in the subfolder `decisions/` to keep them close to the documentation but also separate the decisions from other documentation.
-
-#### Automatic approach
-
-To create a new decision record, run:
-
-```bash
-way_of_working new decision_record [NAME]
-```
-
-Where `[NAME]` is the title of your decision record, for example:
 
 ```bash
 way_of_working new decision_record "Use Markdown Any Decision Records"
 ```
+
+**Propose decision:**
+
+1. Create ADR with status "proposed"
+2. Open PR, tag stakeholders
+3. Discuss in PR comments
+4. Update to "accepted" once consensus reached
+5. Merge PR
+
+**Supersede existing ADR:**
+
+1. Create new ADR
+2. Update old ADR status to "superseded by [0XXX-new-title.md](0XXX-new-title.md)"
+3. Explain what changed in new ADR
+
+## Enforcement
+
+**PR Review:**
+
+- All ADRs submitted via PR
+- Maintainer approval required
+- Verify MADR template structure, file naming, location
+- Check minimum 2 options with justification
+
+**Quality checklist:**
+
+- ✅ Multiple alternatives with pros/cons
+- ✅ Clear context and constraints
+- ✅ Explicit trade-offs
+- ❌ Only one option presented
+- ❌ Missing justification or context
+
+**Maintenance:**
+
+- Quarterly review for relevance
+- Update deprecated/superseded status as needed
+
+## Examples
+
+**Database choice:**
+
+```markdown
+# Use PostgreSQL for Primary Database
+
+**Status:** accepted
+**Date:** 2025-10-15
+
+## Context and Problem Statement
+
+Need relational database for user data with complex relationships.
+Constraints: ACID compliance, 100K users/1M records, prefer open-source.
+
+## Considered Options
+
+1. PostgreSQL (self-hosted)
+2. MySQL
+3. RDS PostgreSQL
+
+## Decision Outcome
+
+**Chosen:** PostgreSQL (self-hosted)
+
+**Pros:** Open-source, advanced features (JSON, full-text search), ACID, team experience
+**Cons:** DevOps overhead, manual backup, manual scaling
+
+**Why:** Meets requirements within budget. Cloud-managed exceeds budget by 40%.
+Team expertise mitigates complexity.
+
+**Alternatives rejected:**
+- MySQL: No advantage over PostgreSQL
+- RDS: Cost $200-500/month exceeds budget
+```
+
+**Superseded ADR:**
+
+```markdown
+# Use Jest for Frontend Testing
+
+**Status:** superseded by [0015-use-vitest.md](0015-use-vitest.md)
+**Date:** 2025-01-10 (original), 2025-09-15 (superseded)
+
+**Why superseded:** Vitest now standard for Vite projects,
+better integration and performance.
+```
+
+**Rejected decision:**
+
+```markdown
+# Use GraphQL for API Layer
+
+**Status:** rejected
+**Date:** 2025-03-20
+
+## Decision Outcome
+
+**Chosen:** Continue with REST API
+
+**Why rejected:**
+- Current REST meets all requirements
+- Team lacks GraphQL expertise (4-6 week learning curve)
+- Migration cost: 8 engineer-weeks
+- No client needs GraphQL features
+
+**Reconsider when:** Multiple clients need flexible fetching
+or over-fetching impacts performance.
+```
+
+## Resources
+
+- [MADR Documentation][madr]
+- [GDS Architecture Decisions][gds-way]
+- [Way of Working CLI][wow-cli]
+
+[madr]: https://adr.github.io/madr/
+[wow]: https://github.com/HealthDataInsight/way_of_working
+[gds-way]: https://gds-way.digital.cabinet-office.gov.uk/standards/architecture-decisions.html
+[gh-pr]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests
+[wow-cli]: ../cli.md
