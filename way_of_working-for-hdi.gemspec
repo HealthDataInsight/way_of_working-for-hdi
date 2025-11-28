@@ -38,7 +38,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'way_of_working-audit-github', '~> 1.0.1'
   spec.add_dependency 'way_of_working-audit-github-cis_benchmark' # , '~> 1.0.0'
   spec.add_dependency 'way_of_working-changelog-keepachangelog', '~> 1.0.0'
-  spec.add_dependency 'way_of_working-code_linting-hdi', '~> 1.0.0'
+  spec.add_dependency 'way_of_working-code_linting-hdi', '~> 1.1.1'
   spec.add_dependency 'way_of_working-code_of_conduct-contributor_covenant', '~> 1.0.1'
   spec.add_dependency 'way_of_working-decision_record-madr', '~> 1.0.2'
   spec.add_dependency 'way_of_working-inclusive_language-alex', '~> 1.0.1'
