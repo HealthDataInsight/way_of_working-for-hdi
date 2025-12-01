@@ -22,6 +22,7 @@ PATH
       way_of_working-decision_record-madr (~> 1.0.2)
       way_of_working-inclusive_language-alex (~> 1.0.1)
       way_of_working-pull_request_template-hdi (~> 1.0.0)
+      way_of_working-versioning-semver (~> 1.0.0)
       zeitwerk (~> 2.6.18)
 
 GEM
@@ -322,6 +323,9 @@ GEM
       zeitwerk (~> 2.6.18)
     way_of_working-pull_request_template-hdi (1.0.0)
       way_of_working (~> 2.0)
+      zeitwerk (~> 2.6.18)
+    way_of_working-versioning-semver (1.0.0)
+      way_of_working (~> 2.0.1)
       zeitwerk (~> 2.6.18)
     websocket (1.2.11)
     with_clean_rbenv (0.1.0)
