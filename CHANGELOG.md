@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Inclusive Language (alex) is now enabled via the built-in `way_of_working` feature (`require 'way_of_working/inclusive_language/alex'`) instead of the separate `way_of_working-inclusive_language-alex` plugin gem. This requires `way_of_working` >= 2.0.2.
+- Markdown Any Decision Records (MADR) is now enabled via the built-in `way_of_working` feature (`require 'way_of_working/decision_record/madr'`) instead of the separate `way_of_working-decision_record-madr` plugin gem.
+- Keep a Changelog is now enabled via the built-in `way_of_working` feature (`require 'way_of_working/changelog/keepachangelog'`) instead of the separate `way_of_working-changelog-keepachangelog` plugin gem.
+
 ## [1.0.0] - 2025-11-20
 
 ### Added

@@ -10,6 +10,11 @@ loader.setup
 # Require "internal" plugin(s) here
 require 'way_of_working/rake_tasks'
 
+# Opt in to the built-in way_of_working features this organisation uses
+require 'way_of_working/changelog/keepachangelog'
+require 'way_of_working/decision_record/madr'
+require 'way_of_working/inclusive_language/alex'
+
 module WayOfWorking
   module For
     module Hdi
