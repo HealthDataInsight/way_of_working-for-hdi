@@ -14,6 +14,7 @@ require 'way_of_working/rake_tasks'
 require 'way_of_working/changelog/keepachangelog'
 require 'way_of_working/decision_record/madr'
 require 'way_of_working/inclusive_language/alex'
+require 'way_of_working/pull_request_template/hdi'
 
 module WayOfWorking
   module For
