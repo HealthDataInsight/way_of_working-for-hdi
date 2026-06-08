@@ -34,10 +34,9 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_dependency 'octokit', '~> 9.1' # TODO: Remove once way_of_working-code_linting-hdi bumped
-  spec.add_dependency 'way_of_working', '~> 2.0.2'
-  spec.add_dependency 'way_of_working-audit-github', '~> 1.0.1'
+  spec.add_dependency 'way_of_working', '~> 2.1.0'
   spec.add_dependency 'way_of_working-audit-github-cis_benchmark' # , '~> 1.0.0'
-  spec.add_dependency 'way_of_working-code_linting-hdi', '~> 1.0.0'
+  spec.add_dependency 'way_of_working-code_linting-hdi', '~> 1.1.2'
   spec.add_dependency 'zeitwerk', '~> 2.6.18'
 
   # For more information and examples about making a new gem, check out our
