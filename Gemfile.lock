@@ -12,7 +12,6 @@ PATH
   remote: .
   specs:
     way_of_working-for-hdi (1.0.0)
-      octokit (~> 9.1)
       way_of_working (~> 2.1.0)
       way_of_working-audit-github-cis_benchmark
       way_of_working-code_linting-hdi (~> 1.1.2)
