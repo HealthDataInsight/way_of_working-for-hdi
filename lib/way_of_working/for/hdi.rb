@@ -10,6 +10,15 @@ loader.setup
 # Require "internal" plugin(s) here
 require 'way_of_working/rake_tasks'
 
+# Opt in to the built-in way_of_working features this organisation uses
+require 'way_of_working/audit/github'
+require 'way_of_working/changelog/keepachangelog'
+require 'way_of_working/code_of_conduct/contributor_covenant'
+require 'way_of_working/decision_record/madr'
+require 'way_of_working/inclusive_language/alex'
+require 'way_of_working/pull_request_template/hdi'
+require 'way_of_working/versioning/semver'
+
 module WayOfWorking
   module For
     module Hdi
