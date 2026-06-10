@@ -47,7 +47,7 @@ jobs:
           bundle exec jekyll serve --detach --no-watch --port 3000
           # Wait for the server to be ready before running pa11y
           for _ in $(seq 1 30); do
-            curl -sSf http://127.0.0.1:3000/changelog.html -o /dev/null && break  # DevSkim: ignore DS137138,DS162092
+            curl -sSf http://127.0.0.1:3000/way_of_working/changelog.html -o /dev/null && break  # DevSkim: ignore DS137138,DS162092
             sleep 1
           done
 
