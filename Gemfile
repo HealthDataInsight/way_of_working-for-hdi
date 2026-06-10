@@ -7,7 +7,7 @@ def github_gem(plugin_name, branch = 'feature/v1.0.0')
   gem gem_name, git: "https://github.com/HealthDataInsight/#{gem_name}.git", branch:
 end
 
-github_gem('audit-github-cis_benchmark')
+github_gem('audit-github-cis_benchmark', 'main')
 
 # Specify your gem's dependencies in way_of_working-for-hdi.gemspec
 gemspec
