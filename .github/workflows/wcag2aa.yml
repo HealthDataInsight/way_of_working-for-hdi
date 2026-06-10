@@ -1,12 +1,13 @@
 ---
-name: "WCAG 2.1 AA "
-on:
+name: "WCAG 2.2 AA "
+on:  # yamllint disable-line rule:truthy
   push:
     branches:
-      - "main"
+      - main
   pull_request:
     branches:
-      - "main"
+      - main
+  workflow_dispatch:
 
 permissions: read-all
 
@@ -14,44 +15,46 @@ jobs:
   test_accessibility:
     name: Test Accessibility
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./docs
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
       - name: Set up Chrome
+        id: setup-chrome
         uses: browser-actions/setup-chrome@latest
 
-      - name: Set up Ruby via mise
-        uses: jdx/mise-action@v2
-
-      - name: Cache bundled gems
-        uses: actions/cache@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          path: docs/vendor/bundle
-          key: ${{ runner.os }}-gems-docs-${{ hashFiles('docs/Gemfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-gems-docs-
+          node-version: latest
+          cache: npm
+          cache-dependency-path: test/dummy/package-lock.json
 
-      - name: Install gems
+      - name: Install JavaScript dependencies
+        working-directory: test/dummy
+        run: npm install
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - name: Install Ruby dependencies
         run: |
-          bundle config set --local path vendor/bundle
-          bundle install --jobs 4 --retry 3
+          gem install foreman
+          bundle install
+
+      - name: Prepare the database
+        run: bin/rails db:setup
 
       - name: Start server in the background
+        working-directory: test/dummy
         run: |
-          bundle exec jekyll serve --detach --no-watch --port 3000
-        # sleep 5
-        # curl http://127.0.0.1:3000/changelog.html -o changelog.html
+          bin/dev &
+          sleep 10
 
-      # - name: Upload built webpage
-      #   uses: actions/upload-artifact@v3
-      #   with:
-      #     name: built-page
-      #     path: changelog.html
-
-      # Run Pa11y
       - name: Run accessibility tests
-        run: 'npx pa11y --debug --standard WCAG2AA "http://127.0.0.1:3000/changelog.html"'  # DevSkim: ignore DS137138
+        env:
+          CHROME_PATH: ${{ steps.setup-chrome.outputs.chrome-path }}
+        run: |
+          npx pa11y-ci --config .github/workflows/pa11y/wcag2aa.js
