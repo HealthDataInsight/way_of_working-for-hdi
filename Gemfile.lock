@@ -1,11 +1,10 @@
 GIT
   remote: https://github.com/HealthDataInsight/way_of_working-audit-github-cis_benchmark.git
-  revision: ea9a5ac1d9460ca3e37c0142a3c78ae69115f116
-  branch: feature/v1.0.0
+  revision: 28fd09d405f90adc5059e5ebadf05d46d1376fab
+  branch: main
   specs:
-    way_of_working-audit-github-cis_benchmark (1.0.0)
-      way_of_working (~> 2.0)
-      way_of_working-audit-github (~> 1.0)
+    way_of_working-audit-github-cis_benchmark (0.1.0)
+      way_of_working (~> 2.1)
       zeitwerk (~> 2.6.18)
 
 PATH
@@ -293,12 +292,6 @@ GEM
       octokit (~> 9.1)
       rainbow (~> 3.1)
       thor (~> 1.2)
-      zeitwerk (~> 2.6.18)
-    way_of_working-audit-github (1.0.1)
-      faraday-multipart (~> 1.0)
-      faraday-retry (~> 2.2)
-      octokit (~> 9.1)
-      way_of_working (~> 2.0)
       zeitwerk (~> 2.6.18)
     way_of_working-code_linting-hdi (1.1.2)
       octokit (~> 9.1)
