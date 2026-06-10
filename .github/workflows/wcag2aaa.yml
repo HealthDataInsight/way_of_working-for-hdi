@@ -1,13 +1,11 @@
 ---
 name: "WCAG 2.2 AAA "
 on:  # yamllint disable-line rule:truthy
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
-  workflow_dispatch:
+  workflow_run:
+    workflows:
+      - "WCAG 2.1 AA "
+    types:
+      - completed
 
 permissions: read-all
 
@@ -15,44 +13,46 @@ jobs:
   test_accessibility:
     name: Test Accessibility
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./docs
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Chrome
         id: setup-chrome
         uses: browser-actions/setup-chrome@latest
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - name: Set up Ruby via mise
+        uses: jdx/mise-action@v2
+
+      - name: Cache bundled gems
+        uses: actions/cache@v4
         with:
-          node-version: latest
-          cache: npm
-          cache-dependency-path: test/dummy/package-lock.json
+          path: docs/vendor/bundle
+          key: ${{ runner.os }}-gems-docs-${{ hashFiles('docs/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-docs-
 
-      - name: Install JavaScript dependencies
-        working-directory: test/dummy
-        run: npm install
-
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          bundler-cache: true
-
-      - name: Install Ruby dependencies
+      - name: Install gems
         run: |
-          gem install foreman
-          bundle install
-
-      - name: Prepare the database
-        run: bin/rails db:setup
+          bundle config set --local path vendor/bundle
+          bundle install --jobs 4 --retry 3
 
       - name: Start server in the background
-        working-directory: test/dummy
         run: |
-          bin/dev &
-          sleep 10
+          bundle exec jekyll serve --detach --no-watch --port 3000
+        # sleep 5
+        # curl http://127.0.0.1:3000/changelog.html -o changelog.html
 
+      # - name: Upload built webpage
+      #   uses: actions/upload-artifact@v3
+      #   with:
+      #     name: built-page
+      #     path: changelog.html
+
+      # Run Pa11y
       - name: Run accessibility tests
         env:
           CHROME_PATH: ${{ steps.setup-chrome.outputs.chrome-path }}
