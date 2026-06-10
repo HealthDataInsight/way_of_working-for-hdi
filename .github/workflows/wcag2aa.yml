@@ -24,16 +24,21 @@ jobs:
       - name: Set up Chrome
         uses: browser-actions/setup-chrome@latest
 
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
-        # with:
-        #   bundler-cache: true
-        #   cache-version: <working-directory>
+      - name: Set up Ruby via mise
+        uses: jdx/mise-action@v2
 
-      # bundler-cache has issues with the working-directory
+      - name: Cache bundled gems
+        uses: actions/cache@v4
+        with:
+          path: docs/vendor/bundle
+          key: ${{ runner.os }}-gems-docs-${{ hashFiles('docs/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-docs-
+
       - name: Install gems
         run: |
-          bundle install
+          bundle config set --local path vendor/bundle
+          bundle install --jobs 4 --retry 3
 
       - name: Start server in the background
         run: |
