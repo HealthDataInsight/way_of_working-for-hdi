@@ -45,6 +45,7 @@ plugins:
 #
 exclude:
   - decisions/adr-template.md
+  - vendor/  # CI vendors bundled gems into docs/vendor; keep Jekyll out of it
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
