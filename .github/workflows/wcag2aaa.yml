@@ -43,8 +43,11 @@ jobs:
       - name: Start server in the background
         run: |
           bundle exec jekyll serve --detach --no-watch --port 3000
-        # sleep 5
-        # curl http://127.0.0.1:3000/changelog.html -o changelog.html
+          # Wait for the server to be ready before running pa11y
+          for _ in $(seq 1 30); do
+            curl -sSf http://127.0.0.1:3000/changelog.html -o /dev/null && break  # DevSkim: ignore DS137138,DS162092
+            sleep 1
+          done
 
       # - name: Upload built webpage
       #   uses: actions/upload-artifact@v3
@@ -57,4 +60,4 @@ jobs:
         env:
           CHROME_PATH: ${{ steps.setup-chrome.outputs.chrome-path }}
         run: |
-          npx pa11y-ci --config .github/workflows/pa11y/wcag2aaa.js
+          npx pa11y-ci --config ../.github/workflows/pa11y/wcag2aaa.js
