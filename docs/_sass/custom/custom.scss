@@ -13,6 +13,17 @@
 
 @import "./color-scheme-shims";
 
+// The theme highlights the active nav link with a gradient background.
+// axe cannot determine a contrast ratio through a gradient, so it reports the
+// element as "needs review" and pa11y fails the build. Use a solid highlight
+// (same colour, no gradient) and an active-link colour that clears WCAG AAA
+// (#46327a on #ebedf5 is 8.99:1).
+.nav-list .nav-list-item .nav-list-link.active {
+  background-image: none;
+  background-color: #ebedf5;
+  color: #46327a;
+}
+
 @media (prefers-color-scheme: dark) {
   @import "./a11y-colours";
   // @import "./support/support";
@@ -57,4 +68,13 @@
   // @import "./skiptomain";
 
   @import "./color-scheme-shims";
+
+  // Dark-mode active nav link: drop the gradient (see light-mode note above).
+  // The dark highlight matches the sidebar, so distinction comes from weight
+  // and the light purple link colour.
+  .nav-list .nav-list-item .nav-list-link.active {
+    background-image: none;
+    background-color: $sidebar-color;
+    color: $link-color;
+  }
 }

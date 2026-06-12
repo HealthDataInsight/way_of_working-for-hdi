@@ -1,12 +1,13 @@
 ---
-name: "WCAG 2.1 AA "
-on:
+name: "WCAG 2.2 AA "
+on:  # yamllint disable-line rule:truthy
   push:
     branches:
-      - "main"
+      - main
   pull_request:
     branches:
-      - "main"
+      - main
+  workflow_dispatch:
 
 permissions: read-all
 
@@ -22,6 +23,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Set up Chrome
+        id: setup-chrome
         uses: browser-actions/setup-chrome@latest
 
       - name: Set up Ruby via mise
@@ -43,8 +45,11 @@ jobs:
       - name: Start server in the background
         run: |
           bundle exec jekyll serve --detach --no-watch --port 3000
-        # sleep 5
-        # curl http://127.0.0.1:3000/changelog.html -o changelog.html
+          # Wait for the server to be ready before running pa11y
+          for _ in $(seq 1 30); do
+            curl -sSf http://127.0.0.1:3000/way_of_working/changelog.html -o /dev/null && break  # DevSkim: ignore DS137138,DS162092
+            sleep 1
+          done
 
       # - name: Upload built webpage
       #   uses: actions/upload-artifact@v3
@@ -54,4 +59,7 @@ jobs:
 
       # Run Pa11y
       - name: Run accessibility tests
-        run: 'npx pa11y --debug --standard WCAG2AA "http://127.0.0.1:3000/changelog.html"'  # DevSkim: ignore DS137138
+        env:
+          CHROME_PATH: ${{ steps.setup-chrome.outputs.chrome-path }}
+        run: |
+          npx pa11y-ci --config ../.github/workflows/pa11y/wcag2aa.js
